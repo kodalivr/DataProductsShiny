@@ -24,7 +24,9 @@ shinyUI(
                             radioButtons(
                               "colors",
                               "Boxplot Color:",
-                              c("Red" = "red", "Blue" = "blue"))
+                              c("Red" = "red", "Blue" = "blue")),
+                            h3("Documentation"),
+                            p("Please select the variable and then pick the tab for Boxplot or Regression to see the relation. outliners or colors are optional.")
                           ),
                           mainPanel(
                             h3(textOutput("caption")),
